@@ -6,9 +6,6 @@ var username = document.querySelector('#username');
 var email = document.querySelector('#email');
 var address = document.querySelector('#address');
 
-// user data
-var user = {};
-
 /**
  * @typedef {object} Address
  * @property {string} city
@@ -38,7 +35,7 @@ function fetchUser() {
 function startApp() {
   fetchUser()
     .then(function (response) {
-      user= response.data;
+      var user = response.data;
       // TODO: 이름, 이메일, 주소 표시하기
       username.innerText = user.name;
       email.innerText = user.email;
