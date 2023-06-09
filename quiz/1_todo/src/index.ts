@@ -40,7 +40,7 @@ function logFirstTodo(): Todo {
   return todoItems[0];
 }
 
-function showCompleted(): Array<Todo></Todo> {
+function showCompleted(): Array<Todo> {
   return todoItems.filter(item => item.done);
 }
 
